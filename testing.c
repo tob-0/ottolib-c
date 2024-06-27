@@ -4,7 +4,7 @@
 
 void section_start(char *s)
 {
-        printf("\n[ %*s%*s ]\n",(int)(10+strlen(s)/2),s,(int)(10-strlen(s)/2),"");
+        printf("\n\033[1;32m[ %*s%*s ]\033[0m\n",(int)(10+strlen(s)/2),s,(int)(10-strlen(s)/2),"");
 }
 
 void section_field(char *str, void *args)
@@ -15,7 +15,7 @@ void section_field(char *str, void *args)
 }
 void section_end(char *s)
 {
-        printf("\nx %*s%*s x\n",(int)(10+strlen(s)/2),s,(int)(10-strlen(s)/2),"");
+        printf("\n\033[1;31mx %*s%*s x\033[0m\n",(int)(10+strlen(s)/2),s,(int)(10-strlen(s)/2),"");
 }
 
 void nl(void){printf("\n");}
