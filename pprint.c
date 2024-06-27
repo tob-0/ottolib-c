@@ -28,3 +28,8 @@ void pprint_int_tab(int *tab, int sz)
 	}
 	printf("%d }", tab[sz - 1]);
 }
+
+void pprint_info(char *s)
+{
+	printf("%s[+] %s%s\n", pprint_colors.bold_purple,s, pprint_colors.reset);
+}
