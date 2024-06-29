@@ -33,3 +33,8 @@ void pprint_info(char *s)
 {
 	printf("%s[+] %s%s\n", pprint_colors.bold_purple,s, pprint_colors.reset);
 }
+
+void pprint_success(void)
+{
+	printf("%s[OK] Test passed!%s\n", pprint_colors.bold_green, pprint_colors.reset);
+}
